@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Economica|Raleway:100");
+body h1 {
+  font-family: "Economica", sans-serif; }
+body p {
+  font-family: "Raleway", sans-serif; }
+
+#Home-Page {
+  background-color: #0496FF; }
+
+#Home-Name-Banner {
+  font-size: 3em;
+  color: #D81159; }
+
+#Home-Description {
+  font-size: 2em;
+  color: #FFBC42; }
+  #Home-Description a svg {
+    font-size: 2em; }
+
+/*# sourceMappingURL=styles.css.map */

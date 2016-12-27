@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Economica|Raleway:100');
+
+$titleFont: 'Economica', sans-serif;
+$bodyFont: 'Raleway', sans-serif;
+
+body {
+  h1 { font-family: $titleFont; }
+  p { font-family: $bodyFont; }
+}
