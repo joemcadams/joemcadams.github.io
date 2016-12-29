@@ -1,0 +1,63 @@
+{
+  "projects": [
+    {
+      "name": "Filmein",
+      "description": "Movie recommendation web application based on a Facebook profile's likes and ratings",
+      "tools": [
+        "Angular",
+        "Apache"
+      ],
+      "type": "web",
+      "URL": "http://devpost.com/software/filmein"
+    },
+    {
+      "name": "Red Cross / Smoke Alarm Portal",
+      "description": "Open-source Express web application for the Red Cross to manage national fire alarm installations.",
+      "tools": [
+        "Node.js",
+        "PostgreSQL"
+      ],
+      "type": "web",
+      "URL": "https://github.com/redcross/smoke-alarm-portal"
+    },
+    {
+      "name": "GeoPoverty",
+      "description": "Location-based web application to display U.S. Census poverty data based on zip code",
+      "tools": [
+        "HTML",
+        "JavaScript"
+      ],
+      "type": "web",
+      "URL": "http://devpost.com/software/geopoverty"
+    },
+    {
+      "name": "The Human Song",
+      "description": "Simple Java program to play C chords based on permutations in transcription sequences in DNA",
+      "tools": [
+        "Java"
+      ],
+      "type": "desktop",
+      "URL": "https://github.com/joemcadams/The-Human-Song"
+    },
+    {
+      "name": "Upkeep",
+      "description": "Android SMS client with real-time emotional sentiment analysis of text conversations",
+      "tools": [
+        "Java",
+        "Android"
+      ],
+      "type": "mobile",
+      "URL": "http://devpost.com/software/upkeep"
+    },
+    {
+      "name": "Dj Rainbow Pi",
+      "description": "A music visualizer built from scratch with a Raspberry Pi, an Arduino UNO, WS2812 LEDs, and a breadboard",
+      "tools": [
+        "Python",
+        "C"
+      ],
+      "type": "hardware",
+      "URL": "http://devpost.com/software/dj-rainbow-pi-73dbh8"
+    },
+  ]
+}
