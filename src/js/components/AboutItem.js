@@ -3,8 +3,7 @@
  */
 import React, { Component } from 'react'
 
-
-class AboutItem extends React.Component {
+class AboutItem extends Component {
 
     propTypes = {
         title: React.propTypes.string.isRequired,
@@ -27,11 +26,11 @@ class AboutItem extends React.Component {
     }
 
     render() {
+
         return (
             <div>
-                <a onHover={(e) => this.handleHoverEvent(e).bind(this)}>
-                    Something here yo
-                </a>
+                <h1> { this.props.title} </h1>
+                <p> { this.props.description } </p>
             </div>
         )
     }
