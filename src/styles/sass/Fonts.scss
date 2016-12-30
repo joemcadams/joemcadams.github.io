@@ -3,7 +3,5 @@
 $titleFont: 'Economica', sans-serif;
 $bodyFont: 'Raleway', sans-serif;
 
-body {
-  h1 { font-family: $titleFont; }
-  p { font-family: $bodyFont; }
-}
+h1 { font-family: $titleFont; }
+p { font-family: $bodyFont; }

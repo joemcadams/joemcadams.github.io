@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Economica|Raleway:100");
-body h1 {
+h1 {
   font-family: "Economica", sans-serif; }
-body p {
+
+p {
   font-family: "Raleway", sans-serif; }
 
 #Home-Page {
@@ -16,5 +17,13 @@ body p {
   color: #FFBC42; }
   #Home-Description a svg {
     font-size: 2em; }
+
+html {
+  padding: 0;
+  margin: 0; }
+
+body {
+  padding: 0;
+  margin: 0; }
 
 /*# sourceMappingURL=styles.css.map */

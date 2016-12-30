@@ -8,28 +8,14 @@ class AboutItem extends Component {
     propTypes = {
         title: React.propTypes.string.isRequired,
         description: React.propTypes.string.isRequired,
-        gifURL: React.propTypes.string.isRequired
-    }
-
-    componentDidMount() {
-        this.setState(this.getInitialState())
-    }
-
-    getInitialState() {
-        return {
-            "isLoading": false
-        }
-    }
-
-    handleHoverEvent(event) {
-        console.log(event)
+        imagePath: React.propTypes.string.isRequired
     }
 
     render() {
-
         return (
-            <div>
+            <div className="About-Item">
                 <h1> { this.props.title} </h1>
+                <img src={ this.props.imagePath } />
                 <p> { this.props.description } </p>
             </div>
         )

@@ -4,7 +4,7 @@ import NavigationMenu from './components/NavigationMenu'
 class App extends Component {
     render() {
         return (
-            <div>
+            <div id="App">
                 <NavigationMenu />
             </div>
         )
