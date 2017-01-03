@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import HomePage from '../components/HomePage'
 import AboutSection from '../components/AboutSection'
 import ProjectItem from '../components/ProjectItem'
-import { slide as Menu } from 'react-burger-menu'
+import * as AboutStuff from '../../../public/about.json'
+import { pushRotate as Menu } from 'react-burger-menu'
 
 class NavigationMenu extends Component {
 
@@ -24,6 +25,7 @@ class NavigationMenu extends Component {
                 </Menu>
                 <div id="page-wrap">
                     <HomePage />
+                    <AboutSection />
                 </div>
             </div>
         )

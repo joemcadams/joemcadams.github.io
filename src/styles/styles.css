@@ -9,7 +9,6 @@ p {
 
 #Home-Page {
   background-color: #0496FF;
-  min-height: 100vh;
   padding: 10vh 15px 10vh 15px; }
 
 #Home-Name-Banner {
@@ -53,11 +52,12 @@ p {
 .bm-menu {
   background: #373a47;
   padding: 2.5em 1.5em 0;
-  font-size: 1.75em; }
+  font-size: 2em; }
   .bm-menu a p {
     color: white;
     text-align: center;
-    border-bottom: solid #D81159 2px; }
+    border-bottom: solid #D81159 2px;
+    padding-top: 3vh; }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {

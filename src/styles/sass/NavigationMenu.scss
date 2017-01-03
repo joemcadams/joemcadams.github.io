@@ -29,12 +29,13 @@
 .bm-menu {
   background: #373a47;
   padding: 2.5em 1.5em 0;
-  font-size: 1.75em;
+  font-size: 2em;
   a {
     p {
       color: $iconWhite;
       text-align: center;
       border-bottom: solid $primaryRed 2px;
+      padding-top: 3vh;
     }
   }
 }

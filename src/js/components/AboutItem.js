@@ -1,21 +1,18 @@
-/**
- * Created by joemcadams on 12/28/16.
- */
 import React, { Component } from 'react'
 
 class AboutItem extends Component {
 
-    propTypes = {
-        title: React.propTypes.string.isRequired,
-        description: React.propTypes.string.isRequired,
-        imagePath: React.propTypes.string.isRequired
+    static propTypes = {
+        title: React.PropTypes.string.isRequired,
+        description: React.PropTypes.string.isRequired,
+        imagePath: React.PropTypes.string.isRequired
     }
 
     render() {
         return (
             <div className="About-Item">
                 <h1> { this.props.title} </h1>
-                <img src={ this.props.imagePath } />
+                <img src={ this.props.imagePath } alt="A hilarious gif" />
                 <p> { this.props.description } </p>
             </div>
         )

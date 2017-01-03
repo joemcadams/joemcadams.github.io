@@ -1,19 +1,22 @@
 import React, { Component } from 'react'
-import * as AboutItems from '../../../public/about.json'
+import * as About from '../../../public/about.json'
 import AboutItem from '../components/AboutItem'
 
-//FIXME: AboutSection is not rendering the children properly
 class AboutSection extends Component {
-
     render() {
+        const sections = About.sections.map((section, i) => (
+            <AboutItem key={ i }
+                       title={ section.title }
+                       description={ section.description }
+                       imagePath={ section.imagePath }
+            />
+        ))
         return (
           <div>
-              { AboutItems.sections.forEach((section) =>
-                  <AboutItem title={section.title}
-                             description={section.description}
-                             imagePath={section.imagePath}
-                  /> )}
+              { sections }
           </div>
         )
     }
 }
+
+export default AboutSection
