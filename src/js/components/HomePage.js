@@ -11,7 +11,8 @@ class HomePage extends Component {
                 </div>
                 <div id="Home-Description">
                     <p> Full Stack Developer </p>
-                    <p> Lukewarm Hipster </p>
+                    <p> Reluctant Hipster </p>
+                    <p> Eccentric, Eclectic Engineer </p>
                     <a href="https://linkedin.com/in/josephwmcadams">
                         <FaLinkedinSquare />
                     </a>

@@ -3,5 +3,12 @@
 $titleFont: 'Economica', sans-serif;
 $bodyFont: 'Raleway', sans-serif;
 
-h1 { font-family: $titleFont; }
-p { font-family: $bodyFont; }
+h1 {
+  font-family: $titleFont;
+  margin: 0 0 0 0;
+}
+
+p {
+  font-family: $bodyFont;
+  margin: 0 0 0 0;
+}

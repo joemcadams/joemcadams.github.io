@@ -1,18 +1,30 @@
+@import "Colors";
+
 #Home-Page {
-  background-color: #0496FF;
+  background-color: $secondaryBlue;
+  min-height: 100vh;
+  padding: 0 15px 0 15px;
 }
 
 #Home-Name-Banner {
   font-size: 3em;
-  color: #D81159;
+  text-align: center;
+  color: $primaryRed;
+  padding-top: 10vh;
 }
 
 #Home-Description {
+  text-align: center;
+  padding-top: 5vh;
   font-size: 2em;
-  color: #FFBC42;
+  color: $alternativeYellow;
   a {
     svg {
-      font-size: 2em;
+      font-size: 2em; // increase the size of icons
+      color: $iconWhite;
     }
+  }
+  p {
+    padding-bottom: 2vh;
   }
 }

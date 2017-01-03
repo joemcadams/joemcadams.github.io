@@ -1,22 +1,77 @@
 @import url("https://fonts.googleapis.com/css?family=Economica|Raleway:100");
 h1 {
-  font-family: "Economica", sans-serif; }
+  font-family: "Economica", sans-serif;
+  margin: 0 0 0 0; }
 
 p {
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  margin: 0 0 0 0; }
 
 #Home-Page {
-  background-color: #0496FF; }
+  background-color: #0496FF;
+  min-height: 100vh;
+  padding: 0 15px 0 15px; }
 
 #Home-Name-Banner {
   font-size: 3em;
-  color: #D81159; }
+  text-align: center;
+  color: #D81159;
+  padding-top: 10vh; }
 
 #Home-Description {
+  text-align: center;
+  padding-top: 5vh;
   font-size: 2em;
   color: #FFBC42; }
   #Home-Description a svg {
-    font-size: 2em; }
+    font-size: 2em;
+    color: white; }
+  #Home-Description p {
+    padding-bottom: 2vh; }
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px; }
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: white; }
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px; }
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: white; }
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.75em; }
+  .bm-menu a p {
+    color: white;
+    text-align: center;
+    border-bottom: solid #D81159 2px; }
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47; }
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em; }
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3); }
 
 html {
   padding: 0;

@@ -20,5 +20,6 @@ class AboutItem extends Component {
             </div>
         )
     }
-
 }
+
+export default AboutItem
