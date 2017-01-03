@@ -1,23 +1,26 @@
 @import "Colors";
 
-#Home-Page {
-  background-color: $secondaryBlue;
+#home-page {
+  background-color: $babyBlue;
   padding: 10vh 15px 10vh 15px;
 }
 
-#Home-Name-Banner {
+#home-name-banner {
   font-size: 3em;
   text-align: center;
-  color: $primaryRed;
+  color: $lavender;
 }
 
-#Home-Description {
+#home-description {
   text-align: center;
   padding-top: 5vh;
-  font-size: 2em;
-  color: $alternativeYellow;
+  font-size: 2.5em;
+  color: $silverBlue;
   a {
     svg {
+      :hover {
+        color: $lavender;
+      }
       font-size: 2em; // increase the size of icons
       color: $iconWhite;
     }

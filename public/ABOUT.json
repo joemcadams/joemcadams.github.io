@@ -1,9 +1,14 @@
 {
   "sections": [
     {
-      "title": "I'm a software engineer in the streets, a full stack developer in the sheets",
+      "title": "I'm a software engineer",
       "imagePath": "https://media.giphy.com/media/l0HlGmv4WqldO9c5y/giphy.gif",
       "description": "I focus on desktop and web applications, as well as some hobbyist embedded system projects. I majored in computer science in college, and currently work as a front-end developer at a research lab. My preferred technologies are JavaScript(React, TypeScript, Redux), Scala, and Python."
+    },
+    {
+      "title": "I live in Milwaukee, WI",
+      "imagePath": "https://media.giphy.com/media/xTcnTehwgRcbgymhTW/giphy.gif",
+      "description": "I'm originally from Colorado, but this cold instills fear."
     },
     {
       "title": "I enjoy a crowd",
@@ -11,9 +16,14 @@
       "description": "Speaking in front of a room filled with strangers, giving a presentation, or shamelessly singing Beyonce's \"Halo\" in a crowded karaoke bar are all activities I love doing."
     },
     {
-      "title": "sarcasm is life",
+      "title": "Sarcasm is life",
       "imagePath": "https://media.giphy.com/media/XCvFGfVLgtweA/giphy.gif",
       "description": "Over 50% of what comes out of my mouth is 9000% sarcastic. If you were to ask me, \"Joe, what time is it?\" And I didn't respond by saying \"it's time for you to get a watch,\" then something's probably wrong."
+    },
+    {
+      "title": "I mix EDM",
+      "imagePath": "https://media.giphy.com/media/VWwBnimourr8s/giphy.gif",
+      "description": "I create music with Logic Pro X in my spare time, but it's pretty out there. Like me. And them cats 'vibin."
     }
   ]
 }

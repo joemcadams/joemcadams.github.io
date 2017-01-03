@@ -1,3 +1,34 @@
+@import "Colors";
+
+#about {
+  background-color: $darkGrey;
+  padding: 10vh 0 10vh 0;
+}
+
 .About-Item {
 
+  padding: 2vh 0 2vh 0;
+
+  img {
+    max-width: 100vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1, p {
+    text-align: center;
+    padding: 3vh 5vw 3vh 5vw;
+  }
+
+  h1 {
+    color: $lavender;
+    font-size: 3.5em;
+  }
+
+  p {
+    color: $silverBlue;
+    font-size: 1.5em;
+  }
 }

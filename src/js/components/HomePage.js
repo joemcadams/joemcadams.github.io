@@ -5,11 +5,11 @@ import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square'
 class HomePage extends Component {
     render() {
         return (
-            <div id="Home-Page">
-                <div id="Home-Name-Banner">
+            <div id="home-page">
+                <div id="home-name-banner">
                     <h1> Joe McAdams </h1>
                 </div>
-                <div id="Home-Description">
+                <div id="home-description">
                     <p> Full Stack Developer </p>
                     <p> Reluctant Hipster </p>
                     <p> Eccentric, Eclectic Engineer </p>

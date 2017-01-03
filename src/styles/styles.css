@@ -7,25 +7,49 @@ p {
   font-family: "Raleway", sans-serif;
   margin: 0 0 0 0; }
 
-#Home-Page {
-  background-color: #0496FF;
+#home-page {
+  background-color: #5299D3;
   padding: 10vh 15px 10vh 15px; }
 
-#Home-Name-Banner {
+#home-name-banner {
   font-size: 3em;
   text-align: center;
-  color: #D81159; }
+  color: #BEB8EB; }
 
-#Home-Description {
+#home-description {
   text-align: center;
   padding-top: 5vh;
-  font-size: 2em;
-  color: #FFBC42; }
-  #Home-Description a svg {
+  font-size: 2.5em;
+  color: #A2BCE0; }
+  #home-description a svg {
     font-size: 2em;
     color: white; }
-  #Home-Description p {
+    #home-description a svg :hover {
+      color: #BEB8EB; }
+  #home-description p {
     padding-bottom: 2vh; }
+
+#about {
+  background-color: #5E5C6C;
+  padding: 10vh 0 10vh 0; }
+
+.About-Item {
+  padding: 2vh 0 2vh 0; }
+  .About-Item img {
+    max-width: 100vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .About-Item h1, .About-Item p {
+    text-align: center;
+    padding: 3vh 5vw 3vh 5vw; }
+  .About-Item h1 {
+    color: #BEB8EB;
+    font-size: 3.5em; }
+  .About-Item p {
+    color: #A2BCE0;
+    font-size: 1.5em; }
 
 /* Position and sizing of burger button */
 .bm-burger-button {
@@ -56,7 +80,7 @@ p {
   .bm-menu a p {
     color: white;
     text-align: center;
-    border-bottom: solid #D81159 2px;
+    border-bottom: solid #0B5563 2px;
     padding-top: 3vh; }
 
 /* Morph shape necessary with bubble or elastic */
@@ -71,6 +95,11 @@ p {
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3); }
+
+.Line-Separator {
+  height: 5vh;
+  background-color: #0B5563;
+  width: 100vw; }
 
 html {
   padding: 0;

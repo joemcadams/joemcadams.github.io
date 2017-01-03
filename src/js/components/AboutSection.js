@@ -12,7 +12,7 @@ class AboutSection extends Component {
             />
         ))
         return (
-          <div>
+          <div id="about">
               { sections }
           </div>
         )

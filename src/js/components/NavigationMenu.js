@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import HomePage from '../components/HomePage'
 import AboutSection from '../components/AboutSection'
 import ProjectItem from '../components/ProjectItem'
-import * as AboutStuff from '../../../public/about.json'
-import { pushRotate as Menu } from 'react-burger-menu'
+import LineSeparator from '../components/LineSeparator'
+import { push as Menu } from 'react-burger-menu'
 
 class NavigationMenu extends Component {
 
@@ -13,18 +13,19 @@ class NavigationMenu extends Component {
                 <Menu pageWrapId={ "page-wrap" }
                       outerContainerId={ "outer-container"}
                 >
-                    <a id="HomePage" href="/home">
+                    <a href="home">
                         <p>Home</p>
                     </a>
-                    <a id="AboutPage" href="/about">
+                    <a href="about">
                         <p>About</p>
                     </a>
-                    <a id="ProjectsPage" href="/projects">
+                    <a href="projects">
                         <p>Projects</p>
                     </a>
                 </Menu>
                 <div id="page-wrap">
                     <HomePage />
+                    <LineSeparator />
                     <AboutSection />
                 </div>
             </div>
