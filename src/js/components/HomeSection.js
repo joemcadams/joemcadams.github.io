@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import FaGithubSquare from 'react-icons/lib/fa/github-square'
 import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square'
 
-class HomePage extends Component {
+class HomeSection extends Component {
     render() {
         return (
             <div id="home-page">
@@ -11,8 +11,8 @@ class HomePage extends Component {
                 </div>
                 <div id="home-description">
                     <p> Full Stack Developer </p>
-                    <p> Reluctant Hipster </p>
-                    <p> Eccentric, Eclectic Engineer </p>
+                    <p> DIY Enthusiast  </p>
+                    <p> Critically-Acclaimed Hipster </p>
                     <a href="https://linkedin.com/in/josephwmcadams">
                         <FaLinkedinSquare />
                     </a>
@@ -25,4 +25,4 @@ class HomePage extends Component {
     }
 }
 
-export default HomePage
+export default HomeSection

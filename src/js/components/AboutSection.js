@@ -13,6 +13,7 @@ class AboutSection extends Component {
         ))
         return (
           <div id="about">
+              <h1 id="about-title"> About Me </h1>
               { sections }
           </div>
         )

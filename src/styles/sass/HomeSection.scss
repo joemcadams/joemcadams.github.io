@@ -18,11 +18,11 @@
   color: $silverBlue;
   a {
     svg {
+      font-size: 2em; // increase the size of icons
+      color: $iconWhite;
       :hover {
         color: $lavender;
       }
-      font-size: 2em; // increase the size of icons
-      color: $iconWhite;
     }
   }
   p {
