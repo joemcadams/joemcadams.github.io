@@ -6,7 +6,6 @@
     "react-scripts": "0.7.0"
   },
   "dependencies": {
-    "re-carousel": "^1.2.6",
     "react": "^15.4.1",
     "react-burger-menu": "^1.10.10",
     "react-dom": "^15.4.1",
@@ -17,6 +16,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "run-development": "react-scripts start && sass src/styles/sass/Styles.scss:src/styles/styles.css --watch"
   }
 }

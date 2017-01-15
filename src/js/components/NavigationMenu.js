@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import HomePage from './HomeSection'
 import AboutSection from '../components/AboutSection'
-import ProjectItem from '../components/ProjectItem'
+import ProjectSection from '../components/ProjectSection'
 import LineSeparator from '../components/LineSeparator'
 import { push as Menu } from 'react-burger-menu'
-import * as projects from '../../../public/projects.json'
 
 class NavigationMenu extends Component {
 
@@ -28,6 +27,8 @@ class NavigationMenu extends Component {
                     <HomePage />
                     <LineSeparator />
                     <AboutSection />
+                    <LineSeparator />
+                    <ProjectSection />
                 </div>
             </div>
         )

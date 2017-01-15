@@ -14,37 +14,39 @@ const projectTypes = {
 class ProjectItem extends Component {
 
     static propTypes = {
-        title: React.PropTypes.string.isRequired,
+        name: React.PropTypes.string.isRequired,
         description: React.PropTypes.string.isRequired,
-        projectType: React.PropTypes.string.isRequired,
+        type: React.PropTypes.string.isRequired,
         tools: React.PropTypes.arrayOf(React.PropTypes.string),
-        URL: React.PropTypes.string.isRequired
+        url: React.PropTypes.string.isRequired
     }
 
     render() {
         let icon = {}
-        if (this.props.projectType === projectTypes.DESKTOP) icon = DesktopIcon
-        if (this.props.projectType === projectTypes.HARDWARE) icon = HardwareIcon
-        if (this.props.projectType === projectTypes.MOBILE) icon = MobileIcon
-        if (this.props.projectType === projectTypes.WEB) icon = WebIcon
+        if (this.props.type === projectTypes.DESKTOP) icon = DesktopIcon
+        if (this.props.type === projectTypes.HARDWARE) icon = HardwareIcon
+        if (this.props.type === projectTypes.MOBILE) icon = MobileIcon
+        if (this.props.type === projectTypes.WEB) icon = WebIcon
 
         return (
             <div>
                 { icon }
-                <h1> { this.props.title } </h1>
+                <h1> { this.props.name } </h1>
                 <p className="project-description">
                     { this.props.description }
-                    See the project <a href={ this.props.URL }> here </a>.
+                    See the project <a href={ this.props.url }> here </a>.
                 </p>
                 <p className="tools-section">
                     Tools used:
-                    <ul>
-                        { this.props.tools.forEach((tool) => (
-                            <li> { tool } </li>
-                        ))}
-                    </ul>
                 </p>
+                <ul>
+                    { this.props.tools.forEach((tool) => (
+                        <li> { tool } </li>
+                    ))}
+                </ul>
             </div>
         )
     }
 }
+
+export default ProjectItem

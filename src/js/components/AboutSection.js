@@ -6,7 +6,7 @@ class AboutSection extends Component {
     render() {
         const sections = About.sections.map((section, i) => (
             <AboutItem key={ i }
-                       title={ section.title }
+                       title={ section.name }
                        description={ section.description }
                        imagePath={ section.imagePath }
             />

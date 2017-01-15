@@ -8,7 +8,7 @@
         "Apache"
       ],
       "type": "web",
-      "URL": "http://devpost.com/software/filmein"
+      "url": "http://devpost.com/software/filmein"
     },
     {
       "name": "Red Cross / Smoke Alarm Portal",
@@ -18,7 +18,7 @@
         "PostgreSQL"
       ],
       "type": "web",
-      "URL": "https://github.com/redcross/smoke-alarm-portal"
+      "url": "https://github.com/redcross/smoke-alarm-portal"
     },
     {
       "name": "GeoPoverty",
@@ -28,7 +28,7 @@
         "JavaScript"
       ],
       "type": "web",
-      "URL": "http://devpost.com/software/geopoverty"
+      "url": "http://devpost.com/software/geopoverty"
     },
     {
       "name": "The Human Song",
@@ -37,7 +37,7 @@
         "Java"
       ],
       "type": "desktop",
-      "URL": "https://github.com/joemcadams/The-Human-Song"
+      "url": "https://github.com/joemcadams/The-Human-Song"
     },
     {
       "name": "Upkeep",
@@ -47,7 +47,7 @@
         "Android"
       ],
       "type": "mobile",
-      "URL": "http://devpost.com/software/upkeep"
+      "url": "http://devpost.com/software/upkeep"
     },
     {
       "name": "Dj Rainbow Pi",
@@ -57,7 +57,7 @@
         "C"
       ],
       "type": "hardware",
-      "URL": "http://devpost.com/software/dj-rainbow-pi-73dbh8"
+      "url": "http://devpost.com/software/dj-rainbow-pi-73dbh8"
     }
   ]
 }
