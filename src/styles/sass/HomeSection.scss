@@ -3,7 +3,14 @@
 #home-page {
   background-color: $babyBlue;
   padding: 10vh 15px 10vh 15px;
+  min-height: 80vh;
+  max-height: 100vh;
 }
+
+#home-page-content {
+  // TODO: Center the content of the page vertically
+}
+
 
 #home-name-banner {
   font-size: 3em;
