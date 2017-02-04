@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { FaDesktop as DesktopIcon } from 'react-icons/lib/fa/desktop'
-import { FaMobile as MobileIcon } from 'react-icons/lib/fa/mobile'
-import { FaGlobe as WebIcon } from 'react-icons/lib/fa/globe'
-import { GoCircuitBoard as HardwareIcon } from 'react-icons/lib/go/circuit-board'
+import FaDesktop from 'react-icons/lib/fa/desktop'
+import FaMobile from 'react-icons/lib/fa/mobile'
+import FaGlobe from 'react-icons/lib/fa/globe'
+import GoCircuitBoard from 'react-icons/lib/go/circuit-board'
 
 const projectTypes = {
     DESKTOP: "desktop",
@@ -16,17 +16,17 @@ class ProjectItem extends Component {
     static propTypes = {
         name: React.PropTypes.string.isRequired,
         description: React.PropTypes.string.isRequired,
-        type: React.PropTypes.string.isRequired,
+        type: React.PropTypes.node.isRequired,
         tools: React.PropTypes.arrayOf(React.PropTypes.string),
         url: React.PropTypes.string.isRequired
     }
 
     render() {
         let icon = {}
-        if (this.props.type === projectTypes.DESKTOP) icon = DesktopIcon
-        if (this.props.type === projectTypes.HARDWARE) icon = HardwareIcon
-        if (this.props.type === projectTypes.MOBILE) icon = MobileIcon
-        if (this.props.type === projectTypes.WEB) icon = WebIcon
+        if (this.props.type === projectTypes.DESKTOP) icon = <FaDesktop />
+        if (this.props.type === projectTypes.HARDWARE) icon = <GoCircuitBoard />
+        if (this.props.type === projectTypes.MOBILE) icon = <FaMobile />
+        if (this.props.type === projectTypes.WEB) icon = <FaGlobe />
 
         return (
             <div>
@@ -40,9 +40,7 @@ class ProjectItem extends Component {
                     Tools used:
                 </p>
                 <ul>
-                    { this.props.tools.forEach((tool) => (
-                        <li> { tool } </li>
-                    ))}
+                    { this.props.tools.map((tool) => <li><p>{ tool }</p></li> )}
                 </ul>
             </div>
         )

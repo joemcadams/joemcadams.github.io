@@ -4,11 +4,11 @@ import AboutItem from '../components/AboutItem'
 
 class AboutSection extends Component {
     render() {
-        const sections = About.sections.map((section, i) => (
+        const sections = About.sections.map((item, i) => (
             <AboutItem key={ i }
-                       title={ section.name }
-                       description={ section.description }
-                       imagePath={ section.imagePath }
+                       title={ item.name }
+                       description={ item.description }
+                       imagePath={ item.imagePath }
             />
         ))
         return (
