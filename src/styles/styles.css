@@ -93,18 +93,21 @@ p {
 .project-item {
   background-color: #A2BCE0;
   text-align: center; }
-  .project-item .project-title h1 {
-    font-size: 3.5em;
-    text-align: center; }
+  .project-item h1 {
+    font-size: 3.5em !important;
+    text-align: center;
+    color: white; }
   .project-item p {
     font-size: 1.5em; }
     .project-item p svg {
       font-size: 5em;
       color: #0B5563;
       text-align: center; }
-  .project-item .tools-section ul > li > p {
-    text-align: left;
-    font-size: 1.5em; }
+
+.tools-section {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  text-align: left; }
 
 /* Position and sizing of burger button */
 .bm-burger-button {

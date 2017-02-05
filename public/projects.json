@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Filmein",
-      "description": "Movie recommendation web application based on a Facebook profile's likes and ratings",
+      "description": "Movie recommendation web application based on a Facebook profile's likes and ratings. ",
       "tools": [
         "Angular",
         "Apache"
@@ -12,7 +12,7 @@
     },
     {
       "name": "Red Cross / Smoke Alarm Portal",
-      "description": "Open-source Express web application for the Red Cross to manage national fire alarm installations.",
+      "description": "Open-source Express web application for the Red Cross to manage national fire alarm installations. ",
       "tools": [
         "Node.js",
         "PostgreSQL"
@@ -22,7 +22,7 @@
     },
     {
       "name": "GeoPoverty",
-      "description": "Location-based web application to display U.S. Census poverty data based on zip code",
+      "description": "Location-based web application to display U.S. Census poverty data based on zip code. ",
       "tools": [
         "HTML",
         "JavaScript"
@@ -32,7 +32,7 @@
     },
     {
       "name": "The Human Song",
-      "description": "Simple Java program to play C chords based on permutations in transcription sequences in DNA",
+      "description": "Simple Java program to play C chords based on permutations in transcription sequences in DNA. ",
       "tools": [
         "Java"
       ],
@@ -41,7 +41,7 @@
     },
     {
       "name": "Upkeep",
-      "description": "Android SMS client with real-time emotional sentiment analysis of text conversations",
+      "description": "Android SMS client with real-time emotional sentiment analysis of text conversations. ",
       "tools": [
         "Java",
         "Android"
@@ -51,7 +51,7 @@
     },
     {
       "name": "Dj Rainbow Pi",
-      "description": "A music visualizer built from scratch with a Raspberry Pi, an Arduino UNO, WS2812 LEDs, and a breadboard",
+      "description": "A music visualizer built from scratch with a Raspberry Pi, an Arduino UNO, WS2812 LEDs, and a breadboard. ",
       "tools": [
         "Python",
         "C"

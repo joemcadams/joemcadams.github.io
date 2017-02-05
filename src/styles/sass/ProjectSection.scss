@@ -14,28 +14,24 @@
   background-color: $silverBlue;
   text-align: center;
 
-  .project-title {
-    h1 { // TODO: fix font-size not being expected size
-      font-size: $subHeaderFontSize;
-      text-align: center;
-    }
+  h1 {
+    font-size: $subHeaderFontSize !important; // TODO: figure out why the header is inheriting the style from #project-section
+    text-align: center;
+    color: $iconWhite;
   }
 
   p {
-
     font-size: $textFontSize;
-
     svg {
       font-size: 5em; // increase the size of project icons
       color: $darkTurquoise;
       text-align: center;
     }
   }
+}
 
-  .tools-section {
-    ul > li > p { // TODO: fix font-size not being expected size
-      text-align: left;
-      font-size: $textFontSize;
-    }
-  }
+.tools-section {
+  font-family: $bodyFont;
+  font-size: $textFontSize;
+  text-align: left;
 }

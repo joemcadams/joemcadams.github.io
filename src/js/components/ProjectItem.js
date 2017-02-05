@@ -33,17 +33,18 @@ class ProjectItem extends Component {
                 <p>
                     { icon }
                 </p>
-                <h1 className="project-title"> { this.props.name } </h1>
+                <h1> { this.props.name } </h1>
                 <p className="project-description">
                     { this.props.description }
+
                     See the project <a href={ this.props.url }> here</a>.
                 </p>
-                <p className="tools-section">
+                <div className="tools-section">
                     Tools used:
                     <ul>
-                        { this.props.tools.map((tool) => <li><p>{ tool }</p></li> )}
+                        { this.props.tools.map((tool) => <li>{ tool }</li> )}
                     </ul>
-                </p>
+                </div>
 
             </div>
         )
