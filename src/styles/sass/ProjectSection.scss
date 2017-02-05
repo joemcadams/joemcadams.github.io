@@ -1,0 +1,41 @@
+@import "Colors";
+@import "Fonts";
+
+#project-section {
+  h1 {
+    // TODO: add more padding
+    font-size: $titleFontSize;
+    text-align: center;
+  }
+}
+
+.project-item {
+  // TODO: add more padding
+  background-color: $silverBlue;
+  text-align: center;
+
+  .project-title {
+    h1 { // TODO: fix font-size not being expected size
+      font-size: $subHeaderFontSize;
+      text-align: center;
+    }
+  }
+
+  p {
+
+    font-size: $textFontSize;
+
+    svg {
+      font-size: 5em; // increase the size of project icons
+      color: $darkTurquoise;
+      text-align: center;
+    }
+  }
+
+  .tools-section {
+    ul > li > p { // TODO: fix font-size not being expected size
+      text-align: left;
+      font-size: $textFontSize;
+    }
+  }
+}

@@ -17,7 +17,7 @@ class ProjectSection extends Component {
         ))
 
         return (
-            <div>
+            <div id="project-section">
                 <h1> Projects </h1>
                 { projects }
             </div>

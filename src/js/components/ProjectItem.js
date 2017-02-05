@@ -29,19 +29,22 @@ class ProjectItem extends Component {
         if (this.props.type === projectTypes.WEB) icon = <FaGlobe />
 
         return (
-            <div>
-                { icon }
-                <h1> { this.props.name } </h1>
+            <div className="project-item">
+                <p>
+                    { icon }
+                </p>
+                <h1 className="project-title"> { this.props.name } </h1>
                 <p className="project-description">
                     { this.props.description }
-                    See the project <a href={ this.props.url }> here </a>.
+                    See the project <a href={ this.props.url }> here</a>.
                 </p>
                 <p className="tools-section">
                     Tools used:
+                    <ul>
+                        { this.props.tools.map((tool) => <li><p>{ tool }</p></li> )}
+                    </ul>
                 </p>
-                <ul>
-                    { this.props.tools.map((tool) => <li><p>{ tool }</p></li> )}
-                </ul>
+
             </div>
         )
     }

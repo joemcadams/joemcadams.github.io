@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Economica|Raleway:100");
+@import url("https://fonts.googleapis.com/css?family=Economica|Raleway:100");
+@import url("https://fonts.googleapis.com/css?family=Economica|Raleway:100");
 h1 {
   font-family: "Economica", sans-serif;
   margin: 0 0 0 0; }
@@ -30,6 +32,14 @@ p {
       color: #BEB8EB; }
   #home-description p {
     padding-bottom: 2vh; }
+
+h1 {
+  font-family: "Economica", sans-serif;
+  margin: 0 0 0 0; }
+
+p {
+  font-family: "Raleway", sans-serif;
+  margin: 0 0 0 0; }
 
 #about {
   background-color: #BEB8EB;
@@ -66,6 +76,34 @@ p {
     font-size: 3.5em; }
   .About-Item p {
     color: #A2BCE0;
+    font-size: 1.5em; }
+
+h1 {
+  font-family: "Economica", sans-serif;
+  margin: 0 0 0 0; }
+
+p {
+  font-family: "Raleway", sans-serif;
+  margin: 0 0 0 0; }
+
+#project-section h1 {
+  font-size: 5em;
+  text-align: center; }
+
+.project-item {
+  background-color: #A2BCE0;
+  text-align: center; }
+  .project-item .project-title h1 {
+    font-size: 3.5em;
+    text-align: center; }
+  .project-item p {
+    font-size: 1.5em; }
+    .project-item p svg {
+      font-size: 5em;
+      color: #0B5563;
+      text-align: center; }
+  .project-item .tools-section ul > li > p {
+    text-align: left;
     font-size: 1.5em; }
 
 /* Position and sizing of burger button */
