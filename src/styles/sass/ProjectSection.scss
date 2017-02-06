@@ -13,12 +13,7 @@
   // TODO: add more padding
   background-color: $silverBlue;
   text-align: center;
-
-  h1 {
-    font-size: $subHeaderFontSize !important; // TODO: figure out why the header is inheriting the style from #project-section
-    text-align: center;
-    color: $iconWhite;
-  }
+  padding: 5vh 3vw 5vh 3vw;
 
   p {
     font-size: $textFontSize;
@@ -27,6 +22,27 @@
       color: $darkTurquoise;
       text-align: center;
     }
+  }
+}
+
+.project-title {
+  font-size: $subHeaderFontSize !important; // TODO: figure out why the header is inheriting the style from #project-section
+  text-align: center;
+  color: $iconWhite;
+}
+
+.project-subtitle {
+  font-size: $textFontSize;
+  text-align: center;
+  color: $iconWhite;
+}
+
+.project-button {
+  padding: 5px 5px 5px 5px;
+  border: solid $iconWhite 3px;
+  background-color: $lavender;
+  :hover {
+    background-color: $darkTurquoise;
   }
 }
 

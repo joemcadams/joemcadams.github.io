@@ -92,17 +92,31 @@ p {
 
 .project-item {
   background-color: #A2BCE0;
-  text-align: center; }
-  .project-item h1 {
-    font-size: 3.5em !important;
-    text-align: center;
-    color: white; }
+  text-align: center;
+  padding: 5vh 3vw 5vh 3vw; }
   .project-item p {
     font-size: 1.5em; }
     .project-item p svg {
       font-size: 5em;
       color: #0B5563;
       text-align: center; }
+
+.project-title {
+  font-size: 3.5em !important;
+  text-align: center;
+  color: white; }
+
+.project-subtitle {
+  font-size: 1.5em;
+  text-align: center;
+  color: white; }
+
+.project-button {
+  padding: 5px 5px 5px 5px;
+  border: solid white 3px;
+  background-color: #BEB8EB; }
+  .project-button :hover {
+    background-color: #0B5563; }
 
 .tools-section {
   font-family: "Raleway", sans-serif;
