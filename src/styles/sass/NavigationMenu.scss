@@ -31,10 +31,15 @@
   padding: 2.5em 1.5em 0;
   font-size: 2em;
   a {
+    text-decoration: none;
+    opacity: .75;
+    :hover {
+      color: $babyBlue;
+      opacity: 1;
+    }
     p {
       color: $iconWhite;
       text-align: center;
-      border-bottom: solid $darkTurquoise 2px;
       padding-top: 3vh;
     }
   }
@@ -47,7 +52,7 @@
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
+  color: $iconWhite;
   padding: 0.8em;
 }
 

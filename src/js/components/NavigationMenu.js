@@ -3,15 +3,16 @@ import HomePage from './HomeSection'
 import AboutSection from '../components/AboutSection'
 import ProjectSection from '../components/ProjectSection'
 import LineSeparator from '../components/LineSeparator'
-import { push as Menu } from 'react-burger-menu'
+import { slide as Menu } from 'react-burger-menu'
 
 class NavigationMenu extends Component {
 
     render() {
         return (
             <div id="outer-container">
-                <Menu pageWrapId={ "page-wrap" }
-                      outerContainerId={ "outer-container"}
+                <Menu pageWrapId="page-wrap"
+                      outerContainerId="outer-container"
+                      className="navigation-menu"
                 >
                     <a href="home">
                         <p>Home</p>
