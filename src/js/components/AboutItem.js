@@ -10,7 +10,7 @@ class AboutItem extends Component {
 
     render() {
         return (
-            <div className="About-Item">
+            <div className="about-item">
                 <h1> { this.props.title} </h1>
                 <img src={ this.props.imagePath } alt="A hilarious gif" />
                 <p> { this.props.description } </p>
