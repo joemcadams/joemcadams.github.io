@@ -18,6 +18,9 @@
 .bm-cross-button {
   height: 24px;
   width: 24px;
+  :hover {
+    background: $babyBlue;
+  }
 }
 
 /* Color/shape of close button cross */

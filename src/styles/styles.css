@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Economica|Raleway:100");
 @import url("https://fonts.googleapis.com/css?family=Economica|Raleway:100");
 @import url("https://fonts.googleapis.com/css?family=Economica|Raleway:100");
+@import url("https://fonts.googleapis.com/css?family=Economica|Raleway:100");
+h1 {
+  font-family: "Economica", sans-serif;
+  margin: 0 0 0 0; }
+
+p {
+  font-family: "Raleway", sans-serif;
+  margin: 0 0 0 0; }
+
 h1 {
   font-family: "Economica", sans-serif;
   margin: 0 0 0 0; }
@@ -10,28 +19,48 @@ p {
   margin: 0 0 0 0; }
 
 #home-page {
+  position: relative;
   background-color: #5299D3;
-  padding: 10vh 15px 10vh 15px;
+  max-width: 100vw;
   min-height: 80vh;
-  max-height: 100vh; }
+  height: 100vh; }
+  @media screen and (max-width: 500px) {
+    #home-page {
+      padding: 10vh 0 10vh 0; } }
+
+#home-page-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  max-width: 100vw; }
 
 #home-name-banner {
-  font-size: 3em;
+  font-size: 5em;
   text-align: center;
   color: #BEB8EB; }
+  @media screen and (max-width: 500px) {
+    #home-name-banner {
+      font-size: 3em; } }
 
 #home-description {
   text-align: center;
   padding-top: 5vh;
-  font-size: 2.5em;
+  font-size: 3.5em;
   color: #A2BCE0; }
   #home-description a svg {
-    font-size: 2em;
+    font-size: 1.5em;
     color: white; }
     #home-description a svg :hover {
       color: #BEB8EB; }
+    @media screen and (max-width: 1024px) {
+      #home-description a svg {
+        font-size: 2em; } }
   #home-description p {
     padding-bottom: 2vh; }
+  @media screen and (max-width: 500px) {
+    #home-description {
+      font-size: 2em; } }
 
 h1 {
   font-family: "Economica", sans-serif;
@@ -66,7 +95,7 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: solid white 5px; }
+    border: solid white 3px; }
   .About-Item h1, .About-Item p {
     text-align: center;
     padding: 3vh 5vw 3vh 5vw;
@@ -94,6 +123,8 @@ p {
   background-color: #A2BCE0;
   text-align: center;
   padding: 5vh 3vw 5vh 3vw; }
+  .project-item a :hover {
+    background-color: #0B5563; }
   .project-item p {
     font-size: 1.5em; }
     .project-item p svg {
@@ -113,10 +144,8 @@ p {
 
 .project-button {
   padding: 5px 5px 5px 5px;
-  border: solid white 3px;
+  border: solid white 2px;
   background-color: #BEB8EB; }
-  .project-button :hover {
-    background-color: #0B5563; }
 
 .tools-section {
   font-family: "Raleway", sans-serif;
@@ -139,6 +168,8 @@ p {
 .bm-cross-button {
   height: 24px;
   width: 24px; }
+  .bm-cross-button :hover {
+    background: #5299D3; }
 
 /* Color/shape of close button cross */
 .bm-cross {

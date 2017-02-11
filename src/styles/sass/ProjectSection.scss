@@ -14,6 +14,11 @@
   background-color: $silverBlue;
   text-align: center;
   padding: 5vh 3vw 5vh 3vw;
+  a {
+    :hover {
+      background-color: $darkTurquoise;
+    }
+  }
 
   p {
     font-size: $textFontSize;
@@ -39,11 +44,8 @@
 
 .project-button {
   padding: 5px 5px 5px 5px;
-  border: solid $iconWhite 3px;
+  border: solid $iconWhite 2px;
   background-color: $lavender;
-  :hover {
-    background-color: $darkTurquoise;
-  }
 }
 
 .tools-section {

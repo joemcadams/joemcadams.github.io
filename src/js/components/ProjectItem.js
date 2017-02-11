@@ -40,15 +40,17 @@ class ProjectItem extends Component {
                 <Card>
                     <CardBlock>
                         <CardTitle className="project-title"> { this.props.name } </CardTitle>
-                        <CardSubtitle className="project-subtitle"> { this.props.type } { " - " } { icon } </CardSubtitle>
+                        <CardSubtitle className="project-subtitle"> { this.props.type } { " " } { icon } </CardSubtitle>
                         <CardText>
                             { this.props.description }
                             Tools used:
-                            { this.props.tools.map((tool) => <span>{ tool }</span> )}
+                            { this.props.tools.map((tool, i) => <span key={ i }>{ tool }</span> )}
                         </CardText>
-                        <a href={ this.props.url }>
-                            <Button className="project-button"> See the project</Button>
-                        </a>
+                            <Button block={ true } color='secondary'>
+                                <a href={ this.props.url }>
+                                    See the project
+                                </a>
+                            </Button>
                     </CardBlock>
                 </Card>
             </div>
