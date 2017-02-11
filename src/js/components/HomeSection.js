@@ -7,9 +7,7 @@ class HomeSection extends Component {
         return (
             <div id="home-page">
                 <div id="home-page-content">
-                    <div id="home-name-banner">
-                        <h1> Joe McAdams </h1>
-                    </div>
+                    <h1 id="home-title"> Joe McAdams </h1>
                     <div id="home-description">
                         <p> Full Stack Developer </p>
                         <p> DIY Enthusiast  </p>

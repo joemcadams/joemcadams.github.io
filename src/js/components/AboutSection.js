@@ -3,7 +3,7 @@ import { Col, Row, Container } from 'reactstrap'
 import * as About from '../../../public/about.json'
 import AboutItem from '../components/AboutItem'
 
-class AboutSection extends Component {
+class AboutSection extends Component { // TODO: Figure out why last to columns render weird on mobile
     render() {
         const sections = About.sections.map((item, i) => (
             <Col md="6" key={ i }>

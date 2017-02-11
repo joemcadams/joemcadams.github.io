@@ -20,12 +20,13 @@
 }
 
 
-#home-name-banner {
-  font-size: $titleFontSize !important;
+#home-title { // TODO: Why is Bootstrap overriding the size attribute?
+  width: 100%;
+  font-size: 10em !important;
   text-align: center;
   color: $lavender;
   @media screen and (max-width: 500px) {
-    font-size: $textFontSize !important;
+    font-size: $titleFontSize !important;
   }
 }
 
@@ -47,6 +48,6 @@
     padding-bottom: 2vh;
   }
   @media screen and (max-width: 500px) {
-    font-size: 2em;
+    font-size: $textFontSize;
   }
 }
