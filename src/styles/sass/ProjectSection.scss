@@ -14,42 +14,38 @@
   background-color: $silverBlue;
   text-align: center;
   padding: 5vh 3vw 5vh 3vw;
+
   a {
-    :hover {
-      background-color: $darkTurquoise;
-    }
+    text-decoration: none;
   }
 
-  p {
-    font-size: $textFontSize;
+  .project-title {
+    font-family: $titleFont;
+    font-size: $subHeaderFontSize !important; // TODO: figure out why the header is inheriting the style from #project-section
+    text-align: center;
+    color: $darkTurquoise;
+  }
+
+  .project-subtitle {
+    font-family: $bodyFont;
+    font-size: $textFontSize * .8;
+    text-align: center;
+    color: $darkTurquoise;
+    padding: 2vh 0 2vh 0;
     svg {
       font-size: 5em; // increase the size of project icons
-      color: $darkTurquoise;
       text-align: center;
     }
   }
-}
 
-.project-title {
-  font-size: $subHeaderFontSize !important; // TODO: figure out why the header is inheriting the style from #project-section
-  text-align: center;
-  color: $iconWhite;
-}
+  .project-text {
+    font-size: $textFontSize;
+  }
 
-.project-subtitle {
-  font-size: $textFontSize;
-  text-align: center;
-  color: $iconWhite;
-}
+  .project-button {
+    padding: 5px 5px 5px 5px;
+    border: solid $iconWhite 2px;
+    background-color: $lavender;
+  }
 
-.project-button {
-  padding: 5px 5px 5px 5px;
-  border: solid $iconWhite 2px;
-  background-color: $lavender;
-}
-
-.tools-section {
-  font-family: $bodyFont;
-  font-size: $textFontSize;
-  text-align: left;
 }

@@ -22,11 +22,11 @@
 
 #home-title { // TODO: Why is Bootstrap overriding the size attribute?
   width: 100%;
-  font-size: 10em !important;
+  font-size: 10em;
   text-align: center;
   color: $lavender;
   @media screen and (max-width: 500px) {
-    font-size: $titleFontSize !important;
+    font-size: $titleFontSize;
   }
 }
 

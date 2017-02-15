@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Card,
+import { Badge,
+    Card,
     CardImg,
     CardText,
     CardBlock,
@@ -40,17 +41,30 @@ class ProjectItem extends Component {
                 <Card>
                     <CardBlock>
                         <CardTitle className="project-title"> { this.props.name } </CardTitle>
-                        <CardSubtitle className="project-subtitle"> { this.props.type } { " " } { icon } </CardSubtitle>
-                        <CardText>
+                        <CardSubtitle className="project-subtitle">
+                            { icon }
+                            <br/>
+                            { this.props.type }
+                        </CardSubtitle>
+                        <CardText className="project-text">
                             { this.props.description }
+                            <br/>
                             Tools used:
-                            { this.props.tools.map((tool, i) => <span key={ i }>{ tool }</span> )}
+                            <br/>
+                            { this.props.tools.map((tool, i) =>
+                                <div>
+                                    <Badge key={ i }>
+                                        { tool }
+                                    </Badge>
+                                    <br/>
+                                </div>
+                            )}
                         </CardText>
-                            <Button block={ true } color='secondary'>
-                                <a href={ this.props.url }>
+                            <a href={ this.props.url }>
+                                <Button block={ true } color="warning">
                                     See the project
-                                </a>
-                            </Button>
+                                </Button>
+                            </a>
                     </CardBlock>
                 </Card>
             </div>

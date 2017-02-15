@@ -36,12 +36,12 @@ p {
 
 #home-title {
   width: 100%;
-  font-size: 10em !important;
+  font-size: 10em;
   text-align: center;
   color: #BEB8EB; }
   @media screen and (max-width: 500px) {
     #home-title {
-      font-size: 5em !important; } }
+      font-size: 5em; } }
 
 #home-description {
   text-align: center;
@@ -77,30 +77,32 @@ p {
   padding: 5vh 5vw 5vh 5vw;
   text-align: center; }
 
-.about-item {
-  padding: 2vh 0 2vh 0;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  background: rgba(0, 0, 0, 0.5);
+.about-item-wrapper {
+  padding-bottom: 5vh;
   height: 100%; }
-  .about-item img {
-    width: 90%;
-    height: auto;
-    display: block;
+  .about-item-wrapper .about-item {
+    padding: 2vh 0 2vh 0;
     margin-left: auto;
     margin-right: auto;
-    border: solid white 3px; }
-  .about-item h1, .about-item p {
-    text-align: center;
-    padding: 3vh 5vw 3vh 5vw;
-    text-shadow: .03em .03em red; }
-  .about-item h1 {
-    color: #BEB8EB;
-    font-size: 3.5em; }
-  .about-item p {
-    color: #A2BCE0;
-    font-size: 1.5em; }
+    display: block;
+    background: rgba(0, 0, 0, 0.5); }
+    .about-item-wrapper .about-item img {
+      width: 90%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border: solid white 3px; }
+    .about-item-wrapper .about-item h1, .about-item-wrapper .about-item p {
+      text-align: center;
+      padding: 3vh 5vw 3vh 5vw;
+      text-shadow: .03em .03em red; }
+    .about-item-wrapper .about-item h1 {
+      color: #BEB8EB;
+      font-size: 3.5em; }
+    .about-item-wrapper .about-item p {
+      color: #A2BCE0;
+      font-size: 1.5em; }
 
 h1 {
   font-family: "Economica", sans-serif;
@@ -118,34 +120,28 @@ p {
   background-color: #A2BCE0;
   text-align: center;
   padding: 5vh 3vw 5vh 3vw; }
-  .project-item a :hover {
-    background-color: #0B5563; }
-  .project-item p {
-    font-size: 1.5em; }
-    .project-item p svg {
+  .project-item a {
+    text-decoration: none; }
+  .project-item .project-title {
+    font-family: "Economica", sans-serif;
+    font-size: 3.5em !important;
+    text-align: center;
+    color: #0B5563; }
+  .project-item .project-subtitle {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: #0B5563;
+    padding: 2vh 0 2vh 0; }
+    .project-item .project-subtitle svg {
       font-size: 5em;
-      color: #0B5563;
       text-align: center; }
-
-.project-title {
-  font-size: 3.5em !important;
-  text-align: center;
-  color: white; }
-
-.project-subtitle {
-  font-size: 1.5em;
-  text-align: center;
-  color: white; }
-
-.project-button {
-  padding: 5px 5px 5px 5px;
-  border: solid white 2px;
-  background-color: #BEB8EB; }
-
-.tools-section {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.5em;
-  text-align: left; }
+  .project-item .project-text {
+    font-size: 1.5em; }
+  .project-item .project-button {
+    padding: 5px 5px 5px 5px;
+    border: solid white 2px;
+    background-color: #BEB8EB; }
 
 /* Position and sizing of burger button */
 .bm-burger-button {
