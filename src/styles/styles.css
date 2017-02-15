@@ -112,14 +112,19 @@ p {
   font-family: "Raleway", sans-serif;
   margin: 0 0 0 0; }
 
-#project-section h1 {
-  font-size: 5em;
-  text-align: center; }
+#project-section {
+  background-color: #A2BCE0; }
+  #project-section h1 {
+    font-size: 5em;
+    text-align: center;
+    padding: 5vh 5vw 5vh 5vw; }
 
 .project-item {
-  background-color: #A2BCE0;
+  background-color: #5E5C6C;
   text-align: center;
-  padding: 5vh 3vw 5vh 3vw; }
+  padding: 5vh 3vw 5vh 3vw;
+  width: 500px;
+  max-width: 100vw; }
   .project-item a {
     text-decoration: none; }
   .project-item .project-title {
@@ -137,7 +142,8 @@ p {
       font-size: 5em;
       text-align: center; }
   .project-item .project-text {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    padding: 2vh 0 2vh 0; }
   .project-item .project-button {
     padding: 5px 5px 5px 5px;
     border: solid white 2px;

@@ -3,21 +3,20 @@ import { Col, Row, Container } from 'reactstrap'
 import * as About from '../../../public/about.json'
 import AboutItem from '../components/AboutItem'
 
-class AboutSection extends Component { // TODO: Figure out why last to columns render weird on mobile
+class AboutSection extends Component {
 
     splitProjectsIntoChunks = () => {
         const projectSection = []
         for (let i = 0; i < About.sections.length; i += 2) {
-            projectSection.push( // For every two items in the array, create a new Row
-                this.createRowForSection(
-                    this.createColumnForSections(About.sections.slice(i, i + 2)), i
-                )
+            projectSection.push( // For every two items in the about section array, create a new Row
+                // For each Row, create two Columns, each holding an AboutItem component
+                this.createRowForSection(this.createColumnsForSections(About.sections.slice(i, i + 2)), i)
             )
         }
         return projectSection
     }
 
-    createColumnForSections = (sections) => {
+    createColumnsForSections = (sections) => {
         return (
             sections.map((item, i) => (
                 <Col md="6" key={ i }>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Badge,
     Card,
-    CardImg,
     CardText,
     CardBlock,
     CardTitle,
@@ -52,12 +51,12 @@ class ProjectItem extends Component {
                             Tools used:
                             <br/>
                             { this.props.tools.map((tool, i) =>
-                                <div>
+                                <span key={ i }>
                                     <Badge key={ i }>
                                         { tool }
                                     </Badge>
                                     <br/>
-                                </div>
+                                </span>
                             )}
                         </CardText>
                             <a href={ this.props.url }>
