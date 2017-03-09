@@ -5,7 +5,7 @@ import { Badge,
     CardBlock,
     CardTitle,
     CardSubtitle,
-    Button } from 'reactstrap';
+    Button } from 'reactstrap'
 import FaDesktop from 'react-icons/lib/fa/desktop'
 import FaMobile from 'react-icons/lib/fa/mobile'
 import FaGlobe from 'react-icons/lib/fa/globe'

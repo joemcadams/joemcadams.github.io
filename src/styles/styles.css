@@ -53,6 +53,9 @@ p {
     color: white; }
     #home-description a svg :hover {
       color: #BEB8EB; }
+    @media screen and (max-width: 500px) {
+      #home-description a svg {
+        font-size: 2.8em; } }
   #home-description p {
     padding-bottom: 2vh; }
   @media screen and (max-width: 500px) {
@@ -119,35 +122,35 @@ p {
     text-align: center;
     padding: 5vh 5vw 5vh 5vw; }
 
-.project-item {
-  background-color: #5E5C6C;
-  text-align: center;
-  padding: 5vh 3vw 5vh 3vw;
-  width: 500px;
-  max-width: 100vw; }
-  .project-item a {
-    text-decoration: none; }
-  .project-item .project-title {
-    font-family: "Economica", sans-serif;
-    font-size: 3.5em !important;
+.project-item-wrapper {
+  padding: 2vh 2vw 2vh 2vw; }
+  .project-item-wrapper .project-item {
+    background-color: #5E5C6C;
     text-align: center;
-    color: #0B5563; }
-  .project-item .project-subtitle {
-    font-family: "Raleway", sans-serif;
-    font-size: 1.2em;
-    text-align: center;
-    color: #0B5563;
-    padding: 2vh 0 2vh 0; }
-    .project-item .project-subtitle svg {
-      font-size: 5em;
-      text-align: center; }
-  .project-item .project-text {
-    font-size: 1.5em;
-    padding: 2vh 0 2vh 0; }
-  .project-item .project-button {
-    padding: 5px 5px 5px 5px;
-    border: solid white 2px;
-    background-color: #BEB8EB; }
+    padding: 5vh 3vw 5vh 3vw; }
+    .project-item-wrapper .project-item a {
+      text-decoration: none; }
+    .project-item-wrapper .project-item .project-title {
+      font-family: "Economica", sans-serif;
+      font-size: 3.5em !important;
+      text-align: center;
+      color: #0B5563; }
+    .project-item-wrapper .project-item .project-subtitle {
+      font-family: "Raleway", sans-serif;
+      font-size: 1.2em;
+      text-align: center;
+      color: #0B5563;
+      padding: 2vh 0 2vh 0; }
+      .project-item-wrapper .project-item .project-subtitle svg {
+        font-size: 5em;
+        text-align: center; }
+    .project-item-wrapper .project-item .project-text {
+      font-size: 1.5em;
+      padding: 2vh 0 2vh 0; }
+    .project-item-wrapper .project-item .project-button {
+      padding: 5px 5px 5px 5px;
+      border: solid white 2px;
+      background-color: #BEB8EB; }
 
 /* Position and sizing of burger button */
 .bm-burger-button {

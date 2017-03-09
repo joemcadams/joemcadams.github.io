@@ -9,46 +9,45 @@
     padding: 5vh 5vw 5vh 5vw;
   }
 }
-
-.project-item {
-  background-color: $darkGrey;
-  text-align: center;
-  padding: 5vh 3vw 5vh 3vw;
-  width: 500px;
-  max-width: 100vw;
-
-  a {
-    text-decoration: none;
-  }
-
-  .project-title {
-    font-family: $titleFont;
-    font-size: $subHeaderFontSize !important; // TODO: figure out why the header is inheriting the style from #project-section
+.project-item-wrapper {
+  padding: 2vh 2vw 2vh 2vw;
+  .project-item {
+    background-color: $darkGrey;
     text-align: center;
-    color: $darkTurquoise;
-  }
+    padding: 5vh 3vw 5vh 3vw;
 
-  .project-subtitle {
-    font-family: $bodyFont;
-    font-size: $textFontSize * .8;
-    text-align: center;
-    color: $darkTurquoise;
-    padding: 2vh 0 2vh 0;
-    svg {
-      font-size: 5em; // increase the size of project icons
+    a {
+      text-decoration: none;
+    }
+
+    .project-title {
+      font-family: $titleFont;
+      font-size: $subHeaderFontSize !important; // TODO: figure out why the header is inheriting the style from #project-section
       text-align: center;
+      color: $darkTurquoise;
+    }
+
+    .project-subtitle {
+      font-family: $bodyFont;
+      font-size: $textFontSize * .8;
+      text-align: center;
+      color: $darkTurquoise;
+      padding: 2vh 0 2vh 0;
+      svg {
+        font-size: 5em; // increase the size of project icons
+        text-align: center;
+      }
+    }
+
+    .project-text {
+      font-size: $textFontSize;
+      padding: 2vh 0 2vh 0;
+    }
+
+    .project-button {
+      padding: 5px 5px 5px 5px;
+      border: solid $iconWhite 2px;
+      background-color: $lavender;
     }
   }
-
-  .project-text {
-    font-size: $textFontSize;
-    padding: 2vh 0 2vh 0;
-  }
-
-  .project-button {
-    padding: 5px 5px 5px 5px;
-    border: solid $iconWhite 2px;
-    background-color: $lavender;
-  }
-
 }
