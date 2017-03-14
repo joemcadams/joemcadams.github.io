@@ -37,7 +37,7 @@ class ProjectItem extends Component {
 
         return (
             <div className="project-item">
-                <Card>
+                <Card className="project-card">
                     <CardBlock>
                         <CardTitle className="project-title"> { this.props.name } </CardTitle>
                         <CardSubtitle className="project-subtitle">

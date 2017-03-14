@@ -11,16 +11,6 @@
       "url": "http://devpost.com/software/filmein"
     },
     {
-      "name": "Red Cross / Smoke Alarm Portal",
-      "description": "Open-source Express web application for the Red Cross to manage national fire alarm installations. ",
-      "tools": [
-        "Node.js",
-        "PostgreSQL"
-      ],
-      "type": "web",
-      "url": "https://github.com/redcross/smoke-alarm-portal"
-    },
-    {
       "name": "GeoPoverty",
       "description": "Location-based web application to display U.S. Census poverty data based on zip code. ",
       "tools": [
@@ -58,6 +48,16 @@
       ],
       "type": "hardware",
       "url": "http://devpost.com/software/dj-rainbow-pi-73dbh8"
+    },
+    {
+      "name": "Red Cross / Smoke Alarm Portal",
+      "description": "Open-source Express web application for the Red Cross to manage national fire alarm installations. ",
+      "tools": [
+        "Node.js",
+        "PostgreSQL"
+      ],
+      "type": "web",
+      "url": "https://github.com/redcross/smoke-alarm-portal"
     }
   ]
 }

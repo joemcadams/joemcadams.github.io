@@ -36,7 +36,7 @@ export default class ProjectSection extends Component {
                     x: i % colsForSmScreen,
                     y: 0,
                     w: 1,
-                    h: 6,
+                    h: 5,
                     static: true
                 }
                 const mediumItem = {
@@ -59,6 +59,7 @@ export default class ProjectSection extends Component {
                 mediumDeviceLayout.push(mediumItem)
                 largeDeviceLayout.push(largeItem)
             })
+            // TODO: inspect these arrays to ensure expected values are correct
             return { lg: largeDeviceLayout, md: mediumDeviceLayout, sm: smallDeviceLayout }
         }
 
@@ -66,7 +67,7 @@ export default class ProjectSection extends Component {
             <div id="project-section">
                 <h1> Projects </h1>
                 <ResponsiveReactGridLayout
-                    className="layout"
+                    className="project-layout"
                     measureBefoureMount={ true }
                     layouts={ createProjectLayouts() }
                     breakpoints={ { lg: 1200, md: 500, sm: 0 } }

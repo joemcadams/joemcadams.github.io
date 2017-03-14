@@ -122,35 +122,42 @@ p {
     text-align: center;
     padding: 5vh 5vw 5vh 5vw; }
 
+.project-layout {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0; }
+
 .project-item-wrapper {
   padding: 2vh 2vw 2vh 2vw; }
   .project-item-wrapper .project-item {
-    background-color: #5E5C6C;
+    background-color: #BEB8EB;
+    box-shadow: black 0px 0px .1em .1em;
     text-align: center;
     padding: 5vh 3vw 5vh 3vw; }
-    .project-item-wrapper .project-item a {
-      text-decoration: none; }
-    .project-item-wrapper .project-item .project-title {
-      font-family: "Economica", sans-serif;
-      font-size: 3.5em !important;
-      text-align: center;
-      color: #0B5563; }
-    .project-item-wrapper .project-item .project-subtitle {
-      font-family: "Raleway", sans-serif;
-      font-size: 1.2em;
-      text-align: center;
-      color: #0B5563;
-      padding: 2vh 0 2vh 0; }
-      .project-item-wrapper .project-item .project-subtitle svg {
-        font-size: 5em;
-        text-align: center; }
-    .project-item-wrapper .project-item .project-text {
-      font-size: 1.5em;
-      padding: 2vh 0 2vh 0; }
-    .project-item-wrapper .project-item .project-button {
-      padding: 5px 5px 5px 5px;
-      border: solid white 2px;
-      background-color: #BEB8EB; }
+    .project-item-wrapper .project-item .project-card {
+      border: solid sandybrown 15px; }
+      .project-item-wrapper .project-item .project-card a {
+        text-decoration: none; }
+      .project-item-wrapper .project-item .project-card .project-title {
+        font-family: "Economica", sans-serif;
+        font-size: 3.5em !important;
+        text-align: center;
+        color: #0B5563; }
+      .project-item-wrapper .project-item .project-card .project-subtitle {
+        font-family: "Raleway", sans-serif;
+        font-size: 1.2em;
+        text-align: center;
+        color: #0B5563;
+        padding: 2vh 0 2vh 0; }
+        .project-item-wrapper .project-item .project-card .project-subtitle svg {
+          font-size: 5em;
+          text-align: center; }
+      .project-item-wrapper .project-item .project-card .project-text {
+        font-size: 1.5em;
+        padding: 2vh 0 2vh 0; }
+      .project-item-wrapper .project-item .project-card .project-button {
+        padding: 5px 5px 5px 5px;
+        border: solid white 2px;
+        background-color: #BEB8EB; }
 
 /* Position and sizing of burger button */
 .bm-burger-button {
