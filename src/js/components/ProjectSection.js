@@ -36,7 +36,7 @@ export default class ProjectSection extends Component {
                     x: i % colsForSmScreen,
                     y: 0,
                     w: 1,
-                    h: 5,
+                    h: 6,
                     static: true
                 }
                 const mediumItem = {
@@ -52,13 +52,14 @@ export default class ProjectSection extends Component {
                     x: i % colsForLgScreen,
                     y: Math.floor(i / colsForLgScreen),
                     w: 1,
-                    h: 4,
+                    h: 5,
                     static: true
                 }
                 smallDeviceLayout.push(smallItem)
                 mediumDeviceLayout.push(mediumItem)
                 largeDeviceLayout.push(largeItem)
             })
+            console.log(JSON.stringify(largeDeviceLayout))
             // TODO: inspect these arrays to ensure expected values are correct
             return { lg: largeDeviceLayout, md: mediumDeviceLayout, sm: smallDeviceLayout }
         }

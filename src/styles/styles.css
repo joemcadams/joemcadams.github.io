@@ -121,10 +121,8 @@ p {
     font-size: 5em;
     text-align: center;
     padding: 5vh 5vw 5vh 5vw; }
-
-.project-layout {
-  padding: 0 0 0 0;
-  margin: 0 0 0 0; }
+  #project-section .project-layout {
+    margin: 0; }
 
 .project-item-wrapper {
   padding: 2vh 2vw 2vh 2vw; }

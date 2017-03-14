@@ -50,7 +50,7 @@
       "url": "http://devpost.com/software/dj-rainbow-pi-73dbh8"
     },
     {
-      "name": "Red Cross / Smoke Alarm Portal",
+      "name": "Smoke Alarm Portal",
       "description": "Open-source Express web application for the Red Cross to manage national fire alarm installations. ",
       "tools": [
         "Node.js",
