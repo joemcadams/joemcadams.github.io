@@ -17,6 +17,8 @@ const VIEWS = {
 
 const iconSize = 30
 
+// TODO: How the hell do you bind components to state's view??? 
+
 export class NavigationBar extends Component {
 
   constructor() {
