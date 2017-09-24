@@ -157,10 +157,13 @@ p {
         border: solid white 2px;
         background-color: #BEB8EB; }
 
-#NavigationBar {
+#navigation-bar {
   position: fixed;
-  height: 10vh;
-  margin-top: 90vh; }
+  max-height: 10vh;
+  width: 100vw;
+  padding: auto; }
+  #navigation-bar .icon {
+    font-size: 100%; }
 
 .Line-Separator {
   height: 5vh;

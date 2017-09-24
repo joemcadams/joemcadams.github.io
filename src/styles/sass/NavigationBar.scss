@@ -1,7 +1,11 @@
 @import "Colors";
 
-#NavigationBar {
+#navigation-bar {
   position: fixed;
-  height: 10vh;
-  margin-top: 90vh;
+  max-height: 10vh;
+  width: 100vw;
+  padding: auto;
+  .icon {
+    font-size: 100%;
+  } 
 }
