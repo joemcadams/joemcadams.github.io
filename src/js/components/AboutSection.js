@@ -3,7 +3,7 @@ import { Col, Row, Container } from 'reactstrap'
 import * as About from '../../../public/about.json'
 import AboutItem from '../components/AboutItem'
 
-class AboutSection extends Component {
+export class AboutSection extends Component {
 
     splitProjectsIntoChunks = () => {
         const projectSection = []
@@ -49,5 +49,3 @@ class AboutSection extends Component {
         )
     }
 }
-
-export default AboutSection

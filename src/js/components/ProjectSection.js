@@ -5,7 +5,7 @@ import * as Projects from '../../../public/projects.json'
 
 const ResponsiveReactGridLayout = WidthProvider(Responsive)
 
-export default class ProjectSection extends Component {
+export class ProjectSection extends Component {
 
     render() {
 
