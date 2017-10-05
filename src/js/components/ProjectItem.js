@@ -1,11 +1,4 @@
 import React, { Component } from 'react'
-import { Badge,
-    Card,
-    CardText,
-    CardBlock,
-    CardTitle,
-    CardSubtitle,
-    Button } from 'reactstrap'
 import FaDesktop from 'react-icons/lib/fa/desktop'
 import FaMobile from 'react-icons/lib/fa/mobile'
 import FaGlobe from 'react-icons/lib/fa/globe'
@@ -35,6 +28,26 @@ class ProjectItem extends Component {
         if (this.props.type === projectTypes.MOBILE) icon = <FaMobile />
         if (this.props.type === projectTypes.WEB) icon = <FaGlobe />
 
+        const CardExampleWithAvatar = () => (
+            <Card>
+                <CardMedia
+                    overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
+                >
+                    <img src="images/nature-600-337.jpg" alt="" />
+                </CardMedia>
+                <CardHeader
+                    title={ props.name }
+                    subtitle={ props.tools }
+                    avatar={ icon }
+                />
+                <CardTitle title="Card title" subtitle="Card subtitle" />
+                <CardText> { props.description } </CardText>
+                <CardActions>
+                    <FlatButton label="Action1" />
+                    <FlatButton label="Action2" />
+                </CardActions>
+            </Card>
+        )
         return (
             <div className="project-item">
                 <Card className="project-card">
