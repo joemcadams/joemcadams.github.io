@@ -9,6 +9,7 @@ import { AboutSection } from './AboutSection'
 import { ProjectSection } from './ProjectSection'
 
 import { COLORS } from '../styles/Colors'
+import { CONTENT_STYLES } from '../styles/NavigationBar'
 
 const VIEWS = {
   HOME: 0,
@@ -35,6 +36,7 @@ export class NavigationBar extends Component {
     return (
       <Tabs id="navigation-bar" 
         onChange={ (value) => this.changeViewTo(value) }
+        contentContainerStyle={ CONTENT_STYLES }
       >
         <Tab label="Home" icon={ <MdHome className="icon" /> } value={ VIEWS.HOME }>
           <HomeSection/>

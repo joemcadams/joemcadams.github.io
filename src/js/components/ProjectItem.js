@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
+import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'material-ui/Card'
+import RaisedButton from 'material-ui/RaisedButton'
+import Paper from 'material-ui/Paper'
 import FaDesktop from 'react-icons/lib/fa/desktop'
 import FaMobile from 'react-icons/lib/fa/mobile'
 import FaGlobe from 'react-icons/lib/fa/globe'
 import GoCircuitBoard from 'react-icons/lib/go/circuit-board'
+import { PROJECT_CONTAINER_STYLES, PROJECT_ITEM_STYLES } from '../styles/ProjectItem'
 
 const projectTypes = {
     DESKTOP: "desktop",
@@ -11,77 +15,34 @@ const projectTypes = {
     MOBILE: "mobile"
 }
 
-class ProjectItem extends Component {
-
-    static propTypes = {
-        name: React.PropTypes.string.isRequired,
-        description: React.PropTypes.string.isRequired,
-        type: React.PropTypes.node.isRequired,
-        tools: React.PropTypes.arrayOf(React.PropTypes.string),
-        url: React.PropTypes.string.isRequired
-    }
-
-    render() {
-        let icon = {}
-        if (this.props.type === projectTypes.DESKTOP) icon = <FaDesktop />
-        if (this.props.type === projectTypes.HARDWARE) icon = <GoCircuitBoard />
-        if (this.props.type === projectTypes.MOBILE) icon = <FaMobile />
-        if (this.props.type === projectTypes.WEB) icon = <FaGlobe />
-
-        const CardExampleWithAvatar = () => (
-            <Card>
-                <CardMedia
-                    overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
-                >
-                    <img src="images/nature-600-337.jpg" alt="" />
-                </CardMedia>
+const ProjectItem = (props) => {
+    
+    let allTools = ""
+    props.tools.forEach((tool, i) => { i === props.tools.length - 1 ? allTools += `${tool}` : allTools += `${tool}, ` })
+    
+    let icon = {}
+    const iconSize = 30
+    if (props.type === projectTypes.DESKTOP) icon = <FaDesktop size={ iconSize }/>
+    if (props.type === projectTypes.HARDWARE) icon = <GoCircuitBoard size={ iconSize }/>
+    if (props.type === projectTypes.MOBILE) icon = <FaMobile size={ iconSize }/>
+    if (props.type === projectTypes.WEB) icon = <FaGlobe size={ iconSize }/>
+    // <CardMedia><img src={ props.imagePath } alt="Project Image" /></CardMedia>
+    
+    return (
+        <Paper zDepth={ 2 } style={ PROJECT_CONTAINER_STYLES }>
+            <Card style={ PROJECT_ITEM_STYLES }>
                 <CardHeader
                     title={ props.name }
-                    subtitle={ props.tools }
+                    subtitle={ allTools }
                     avatar={ icon }
                 />
-                <CardTitle title="Card title" subtitle="Card subtitle" />
                 <CardText> { props.description } </CardText>
                 <CardActions>
-                    <FlatButton label="Action1" />
-                    <FlatButton label="Action2" />
+                    <a href={ props.url }><RaisedButton label="See more" primary /></a>
                 </CardActions>
             </Card>
-        )
-        return (
-            <div className="project-item">
-                <Card className="project-card">
-                    <CardBlock>
-                        <CardTitle className="project-title"> { this.props.name } </CardTitle>
-                        <CardSubtitle className="project-subtitle">
-                            { icon }
-                            <br/>
-                            { this.props.type }
-                        </CardSubtitle>
-                        <CardText className="project-text">
-                            { this.props.description }
-                            <br/>
-                            Tools used:
-                            <br/>
-                            { this.props.tools.map((tool, i) =>
-                                <span key={ i }>
-                                    <Badge key={ i }>
-                                        { tool }
-                                    </Badge>
-                                    <br/>
-                                </span>
-                            )}
-                        </CardText>
-                            <a href={ this.props.url }>
-                                <Button block={ true } color="warning">
-                                    See the project
-                                </Button>
-                            </a>
-                    </CardBlock>
-                </Card>
-            </div>
-        )
-    }
+        </Paper>
+    )
 }
 
 export default ProjectItem
