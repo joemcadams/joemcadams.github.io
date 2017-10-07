@@ -29,7 +29,7 @@ const ProjectItem = (props) => {
     // <CardMedia><img src={ props.imagePath } alt="Project Image" /></CardMedia>
     
     return (
-        <Paper zDepth={ 2 } style={ PROJECT_CONTAINER_STYLES }>
+        <Paper zDepth={ 1 } style={ PROJECT_CONTAINER_STYLES }>
             <Card style={ PROJECT_ITEM_STYLES }>
                 <CardHeader
                     title={ props.name }
