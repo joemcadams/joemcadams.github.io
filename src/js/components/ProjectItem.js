@@ -6,13 +6,16 @@ import FaDesktop from 'react-icons/lib/fa/desktop'
 import FaMobile from 'react-icons/lib/fa/mobile'
 import FaGlobe from 'react-icons/lib/fa/globe'
 import GoCircuitBoard from 'react-icons/lib/go/circuit-board'
-import { PROJECT_CONTAINER_STYLES, PROJECT_ITEM_STYLES } from '../styles/ProjectItem'
+import MdVisibility from 'react-icons/lib/md/visibility'
+import { PROJECT_ITEM_STYLES } from '../styles/ProjectItem'
+import * as _ from 'lodash'
 
 const PROJECT_TYPES = {
     DESKTOP: "desktop",
     WEB: "web",
     HARDWARE: "hardware",
-    MOBILE: "mobile"
+    MOBILE: "mobile",
+    AR_VR: "ar/vr"
 }
 
 const ProjectItem = props => {
@@ -26,11 +29,12 @@ const ProjectItem = props => {
     if (props.type === PROJECT_TYPES.HARDWARE) icon = <GoCircuitBoard size={ iconSize }/>
     if (props.type === PROJECT_TYPES.MOBILE) icon = <FaMobile size={ iconSize }/>
     if (props.type === PROJECT_TYPES.WEB) icon = <FaGlobe size={ iconSize }/>
-    // <CardMedia><img src={ props.imagePath } alt="Project Image" /></CardMedia>
+    if (props.type === PROJECT_TYPES.AR_VR) icon = <MdVisibility size={ iconSize }/>
     
     return (
-        <Paper zDepth={ 1 } style={ PROJECT_CONTAINER_STYLES }>
+        <Paper zDepth={ 1 }>
             <Card style={ PROJECT_ITEM_STYLES }>
+                <CardMedia><img src={ process.env.PUBLIC_URL + props.imagePath } /></CardMedia>
                 <CardHeader
                     title={ props.name }
                     subtitle={ allTools }
