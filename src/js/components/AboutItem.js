@@ -7,7 +7,7 @@ import * as _ from 'lodash'
 const DESCRIPTION_TEXT_STYLES = window.innerWidth > 800 ? TEXT_STYLES.ABOUT_ITEM_TEXT : TEXT_STYLES.ABOUT_ITEM_TEXT_MOBILE
 const IMAGE_STYLES = window.innerWidth > 800 ? ABOUT_ITEM_STYLES.IMAGE : ABOUT_ITEM_STYLES.IMAGE_MOBILE
 const HEADER_STYLES = _.merge(TEXT_STYLES.HEADER, {
-    fontSize: '2em'
+    fontSize: '1.75em'
 })
 
 class AboutItem extends Component {

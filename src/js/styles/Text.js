@@ -8,12 +8,13 @@ export const TEXT_STYLES = {
     ABOUT_ITEM_TEXT: {
         fontSize: '1.5em',
         textAlign: 'center',
-        padding: '2%',
+        padding: '5%',
         height: '100%'
     },
     ABOUT_ITEM_TEXT_MOBILE: {
         fontSize: '1.2em',
         textAlign: 'center',
-        width: '100%'
+        width: '100%',
+        padding: '5%'
     }
 }
