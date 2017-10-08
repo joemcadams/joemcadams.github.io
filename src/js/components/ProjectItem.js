@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'material-ui/Card'
+import { Card, CardActions, CardHeader, CardMedia, CardText } from 'material-ui/Card'
 import RaisedButton from 'material-ui/RaisedButton'
 import Paper from 'material-ui/Paper'
 import FaDesktop from 'react-icons/lib/fa/desktop'
@@ -7,8 +7,7 @@ import FaMobile from 'react-icons/lib/fa/mobile'
 import FaGlobe from 'react-icons/lib/fa/globe'
 import GoCircuitBoard from 'react-icons/lib/go/circuit-board'
 import MdVisibility from 'react-icons/lib/md/visibility'
-import { PROJECT_ITEM_STYLES } from '../styles/ProjectItem'
-import * as _ from 'lodash'
+import { PROJECT_ITEM_STYLES } from '../styles/Projects'
 
 const PROJECT_TYPES = {
     DESKTOP: "desktop",
@@ -34,7 +33,7 @@ const ProjectItem = props => {
     return (
         <Paper zDepth={ 1 }>
             <Card style={ PROJECT_ITEM_STYLES }>
-                <CardMedia><img src={ process.env.PUBLIC_URL + props.imagePath } /></CardMedia>
+                <CardMedia><img src={ process.env.PUBLIC_URL + props.imagePath } alt="Project"/></CardMedia>
                 <CardHeader
                     title={ props.name }
                     subtitle={ allTools }
@@ -42,7 +41,7 @@ const ProjectItem = props => {
                 />
                 <CardText> { props.description } </CardText>
                 <CardActions>
-                    <a href={ props.url }><RaisedButton label="See more" primary /></a>
+                    { props.url ? <a href={ props.url }><RaisedButton label="See more" primary /></a> : <div /> }
                 </CardActions>
             </Card>
         </Paper>

@@ -3,12 +3,9 @@ import { Tabs, Tab } from 'material-ui/Tabs'
 import MdHome from 'react-icons/lib/md/home'
 import MdImportantDevices from 'react-icons/lib/md/important-devices' // projects icon
 import MdInsertEmoticon from 'react-icons/lib/md/insert-emoticon' // about icon
-
 import { HomeSection } from './HomeSection'
 import { AboutSection } from './AboutSection'
 import { ProjectSection } from './ProjectSection'
-
-import { COLORS } from '../styles/Colors'
 import { CONTENT_STYLES } from '../styles/NavigationBar'
 
 const VIEWS = {
