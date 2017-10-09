@@ -33,7 +33,7 @@ const ProjectItem = props => {
     return (
         <Paper zDepth={ 1 }>
             <Card style={ PROJECT_ITEM_STYLES }>
-                <CardMedia><img src={ process.env.PUBLIC_URL + props.imagePath } alt="Project"/></CardMedia>
+                <CardMedia><img src={ props.imagePath } alt="Project"/></CardMedia>
                 <CardHeader
                     title={ props.name }
                     subtitle={ allTools }
