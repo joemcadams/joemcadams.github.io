@@ -1,32 +1,26 @@
-import { indigoA100, deepOrange500 } from 'material-ui/styles/colors'
+import { APP_COLORS } from './App'
 
 export const HOME_STYLES = {
     CONTAINER: {
-        minHeight: '80vh',
-        marginTop: '25vh'
+        minHeight: window.innerWidth > 800 ? '57vh' : '61vh',
+        marginTop: window.innerWidth > 800 ? '25vh' : '20vh'
     },
     HEADER: {
-        fontSize: '5em',
-        color: deepOrange500,
-        textAlign: 'center',
-        width: '100%'
-    },
-    SUB_HEADER: {
-        fontSize: '3em',
-        color: indigoA100,
+        fontSize: window.innerWidth > 800 ? '5em' : '3em',
+        marginBottom: '5vh',
+        color: APP_COLORS.PRIMARY_COLOR,
         textAlign: 'center'
     },
-    // ICON_CONTAINER: {
-    //     width: '50%',
-    //     marginLeft: '25%',
-    // },
+    SUB_HEADER: {
+        fontSize: window.innerWidth > 800 ? '3em' : '2em',
+        color: APP_COLORS.ALTERNATE_COLOR,
+        textAlign: 'center'
+    },
     ICON_WRAPPER: {
-        width: '100%',
-        marginLeft: '25vw'
+        textAlign: 'center'
     },
     ICON: {
-        FONT_COLOR: deepOrange500,
-        textAlign: 'center',
+        FONT_COLOR: APP_COLORS.PRIMARY_COLOR,
         display: 'inline-block',
     }
 }

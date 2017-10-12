@@ -1,29 +1,37 @@
 import {
     blueGrey700, cyan700,
-    deepOrange500,
+    purpleA200,
     cyanA200, grey300, grey400, grey500,
     indigoA100, white, fullBlack,
 } from 'material-ui/styles/colors'
 import { fade } from 'material-ui/utils/colorManipulator'
 import spacing from 'material-ui/styles/spacing'
 
-export const AppStyles = {
+export const APP_COLORS = {
+    PRIMARY_COLOR: blueGrey700,
+    ACCENT_COLOR: purpleA200,
+    TEXT_COLOR: white,
+    ALTERNATE_COLOR: indigoA100,
+    SHADOW_COLOR: fullBlack
+}
+
+export const APP_STYLES = {
     spacing: spacing,
     fontFamily: 'Roboto, sans-serif',
     palette: {
-        primary1Color: blueGrey700,
+        primary1Color: APP_COLORS.PRIMARY_COLOR,
         primary2Color: cyan700,
         primary3Color: grey400,
-        accent1Color: deepOrange500,
+        accent1Color: APP_COLORS.ACCENT_COLOR,
         accent2Color: cyanA200,
         accent3Color: grey500,
-        textColor: white,
-        alternateTextColor: indigoA100,
-        canvasColor: indigoA100,
+        textColor: APP_COLORS.TEXT_COLOR,
+        alternateTextColor: APP_COLORS.ALTERNATE_COLOR,
+        canvasColor: APP_COLORS.ALTERNATE_COLOR,
         borderColor: grey300,
-        disabledColor: fade(white, 0.3),
-        pickerHeaderColor: blueGrey700,
-        clockCircleColor: fade(white, 0.07),
-        shadowColor: fullBlack,
+        disabledColor: fade(APP_COLORS.TEXT_COLOR, 0.3),
+        pickerHeaderColor: APP_COLORS.PRIMARY_COLOR,
+        clockCircleColor: fade(APP_COLORS.TEXT_COLOR, 0.07),
+        shadowColor: APP_COLORS.SHADOW_COLOR,
     },
 }

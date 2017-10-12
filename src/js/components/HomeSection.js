@@ -10,7 +10,6 @@ export const HomeSection = () => (
         <h1 style={ HOME_STYLES.HEADER }> Joe McAdams </h1>
         <div>
             <p style={ HOME_STYLES.SUB_HEADER }> Full Stack Developer </p>
-            <p style={ HOME_STYLES.SUB_HEADER }> Amateur Van-dweller </p>
             <p style={ HOME_STYLES.SUB_HEADER }> Professional Goon  </p>
             <div style={ HOME_STYLES.ICON_CONTAINER }>
                 <div style={ HOME_STYLES.ICON_WRAPPER }>
