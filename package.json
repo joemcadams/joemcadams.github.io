@@ -25,5 +25,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://joemcadams.github.io/website-refactor"
+  "homepage": "https://joemcadams.github.io"
 }
