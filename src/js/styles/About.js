@@ -1,5 +1,3 @@
-import { easings } from 'react-stack-grid'
-
 export const CONTAINER_STYLES = {
     gutterWidth: 20,
     gutterHeight: 20,
@@ -8,7 +6,6 @@ export const CONTAINER_STYLES = {
         else return (screenWidth * .8) / 2
     },
     animationLength: 500,
-    easings: easings.circOut
 }
 
 export const ABOUT_ITEM_STYLES = {

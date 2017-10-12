@@ -2,7 +2,7 @@
   "sections": [
     {
       "name": "I'm a software engineer",
-      "imagePath": "https://media.giphy.com/media/l0HlGmv4WqldO9c5y/giphy.gif",
+      "imagePath": "https://media.giphy.com/media/oirLISmToyoeI/giphy.gif",
       "description": "I focus on desktop and web applications, as well as some hobbyist embedded system projects. I majored in computer science in college, and currently work as a front-end developer at a research lab. My preferred technologies are JavaScript(React, TypeScript, Redux), Scala, and Python."
     },
     {

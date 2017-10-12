@@ -16,7 +16,6 @@ export class AboutSection extends Component {
                 duration={ CONTAINER_STYLES.animationLength }
                 gutterWidth={ CONTAINER_STYLES.gutterWidth }
                 gutterHeight={ CONTAINER_STYLES.gutterHeight }
-                easings={ CONTAINER_STYLES.easings }
             >
                 { About.sections.map((section, i) => (
                     <AboutItem

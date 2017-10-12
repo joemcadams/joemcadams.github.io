@@ -30,6 +30,8 @@ const ProjectItem = props => {
     if (props.type === PROJECT_TYPES.WEB) icon = <FaGlobe size={ iconSize }/>
     if (props.type === PROJECT_TYPES.AR_VR) icon = <MdVisibility size={ iconSize }/>
     
+    console.log(props.imagePath)
+    console.log(require) 
     return (
         <Paper zDepth={ 1 }>
             <Card style={ PROJECT_ITEM_STYLES }>
