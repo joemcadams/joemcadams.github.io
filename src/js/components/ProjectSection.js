@@ -3,7 +3,7 @@ import StackGrid from 'react-stack-grid'
 import ProjectItem from '../components/ProjectItem'
 import { CONTAINER_STYLES } from '../styles/Projects'
 import { TEXT_STYLES } from '../styles/Text'
-import * as Projects from '../../../public/projects.json'
+import { Projects } from '../projects'
 
 const projects = Projects.sections
 

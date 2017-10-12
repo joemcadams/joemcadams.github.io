@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import StackGrid from 'react-stack-grid'
 import { TEXT_STYLES } from '../styles/Text'
-import * as About from '../../../public/about.json'
+import { About } from '../about'
 import AboutItem from '../components/AboutItem'
 import { CONTAINER_STYLES } from '../styles/About'
 
