@@ -14,7 +14,7 @@ export class AboutSection extends Component {
     render() {
         return (
           <div>
-            <h1 style={ headerStyles }> About Me </h1>
+            <h1 style={ headerStyles }> About Me (as told by GIFs) </h1>
             <StackGrid 
                 columnWidth={ CONTAINER_STYLES.COLUMN_WIDTH(window.innerWidth) } 
                 duration={ CONTAINER_STYLES.ANIMATION_LENGTH }

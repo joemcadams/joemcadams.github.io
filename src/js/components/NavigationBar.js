@@ -31,7 +31,7 @@ export class NavigationBar extends Component {
   
   render() {
     return (
-      <Tabs id="navigation-bar" 
+      <Tabs
         onChange={ (value) => this.changeViewTo(value) }
         contentContainerStyle={ CONTENT_STYLES }
       >
