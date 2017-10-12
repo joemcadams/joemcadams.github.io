@@ -23,5 +23,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://joemcadams.github.io"
+  "homepage": "https://joemcadams.github.io/me"
 }
