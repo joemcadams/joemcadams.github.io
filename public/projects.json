@@ -10,7 +10,7 @@
         "jQuery"
       ],
       "type": "web",
-      "imagePath": "/images/filmein.png",
+      "imagePath": "/../images/filmein.png",
       "url": "http://devpost.com/software/filmein"
     },
     {
@@ -21,7 +21,7 @@
         "Android"
       ],
       "type": "mobile",
-      "imagePath": "/images/upkeep.png",
+      "imagePath": "/../images/upkeep.png",
       "url": "http://devpost.com/software/upkeep"
     },
     {
@@ -32,7 +32,7 @@
         "C"
       ],
       "type": "hardware",
-      "imagePath": "/images/rpi.png",
+      "imagePath": "/../images/rpi.png",
       "url": "http://devpost.com/software/dj-rainbow-pi-73dbh8"
     },
     {
@@ -43,7 +43,7 @@
         "PostgreSQL"
       ],
       "type": "web",
-      "imagePath": "/images/smokealarmportal.png",
+      "imagePath": "/../images/smokealarmportal.png",
       "url": "https://github.com/redcross/smoke-alarm-portal"
     },
     {
@@ -55,7 +55,7 @@
         "jQuery"
       ],
       "type": "web",
-      "imagePath": "/images/geopoverty.png",
+      "imagePath": "/../images/geopoverty.png",
       "url": "http://devpost.com/software/geopoverty"
     },
     {
@@ -65,7 +65,7 @@
         "Java"
       ],
       "type": "desktop",
-      "imagePath": "/images/humansong.png",
+      "imagePath": "/../images/humansong.png",
       "url": "https://github.com/joemcadams/The-Human-Song"
     }
   ]
