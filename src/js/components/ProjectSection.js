@@ -24,10 +24,10 @@ export const ProjectSection = () => {
         <div>
             <h1 style={ TEXT_STYLES.HEADER }> Projects </h1>
             <StackGrid 
-                columnWidth={ CONTAINER_STYLES.columnWidth(window.innerWidth) } 
-                duration={ CONTAINER_STYLES.animationLength }
-                gutterWidth={ CONTAINER_STYLES.gutterWidth }
-                gutterHeight={ CONTAINER_STYLES.gutterHeight }
+                columnWidth={ CONTAINER_STYLES.COLUMN_WIDTH(window.innerWidth) }
+                duration={ CONTAINER_STYLES.ANIMATION_LENGTH }
+                gutterWidth={ CONTAINER_STYLES.GUTTER_WIDTH }
+                gutterHeight={ CONTAINER_STYLES.GUTTER_HEIGHT }
             >
                 { projectsWrapper }
             </StackGrid>

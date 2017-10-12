@@ -39,7 +39,7 @@ const ProjectItem = props => {
                     subtitle={ allTools }
                     avatar={ icon }
                 />
-                <CardText> { props.description } </CardText>
+                <CardText style={ PROJECT_ITEM_STYLES.TEXT }> { props.description } </CardText>
                 <CardActions>
                     { props.url ? <a href={ props.url }><RaisedButton label="See more" primary /></a> : <div /> }
                 </CardActions>
