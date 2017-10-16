@@ -21,7 +21,7 @@
     "eject": "react-scripts eject",
     "development": "sass src/styles/sass/Styles.scss:src/styles/styles.css --watch",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build --branch master"
   },
   "homepage": "https://joemcadams.github.io"
 }
