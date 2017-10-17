@@ -1,6 +1,6 @@
 import {
     blueGrey700, cyan700,
-    purpleA200,
+    purpleA200, blueGrey50,
     cyanA200, grey300, grey400, grey500,
     indigoA100, white, fullBlack,
 } from 'material-ui/styles/colors'
@@ -12,6 +12,7 @@ export const APP_COLORS = {
     ACCENT_COLOR: purpleA200,
     TEXT_COLOR: white,
     ALTERNATE_COLOR: indigoA100,
+    BACKGROUND_COLOR: blueGrey50,
     SHADOW_COLOR: fullBlack
 }
 

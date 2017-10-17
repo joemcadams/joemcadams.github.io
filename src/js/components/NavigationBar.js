@@ -19,13 +19,13 @@ export class NavigationBar extends Component {
   constructor() {
     super()
     this.state = {
-      value: VIEWS.HOME
+      view: VIEWS.HOME
     }
   }
   
   changeViewTo = ( value ) => {
     this.setState({
-      value: value,
+      view: value,
     })
   }
   
