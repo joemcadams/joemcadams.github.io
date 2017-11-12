@@ -3,7 +3,7 @@ export const About = {
         {
             name: "I'm a software engineer",
             imagePath: "https://media.giphy.com/media/12jHPvCe8Nh87C/giphy.gif",
-            description: "I work primarily with web applications (both server and client side), but I also like to dabble in embedded systems. I'm currently finishing my computer science in college while working as a front-end developer at a research lab. My preferred technologies are JavaScript(React, TypeScript, Redux), Python, and Java."
+            description: "I work primarily with web applications (both server and client side), but I also like to dabble in embedded systems. I'm currently finishing my computer science degree in college while working as a front end developer at a research lab. My preferred technologies are JavaScript(React, TypeScript, Redux), Python, and Java. I'm also playing around with Scala at the moment, and it's pretty delicious."
         },
         {
             name: "I live in Milwaukee, WI",
@@ -11,9 +11,14 @@ export const About = {
             description: "I'm originally from Colorado, but I moved to Milwaukee to study computer science at Marquette University. I can, however, now confidently say I'm prepared for winter."
         },
         {
+            name: "Social justice is important to me",
+            imagePath: "https://media.giphy.com/media/26xBFTiNlwXWJEL96/giphy.gif",
+            description: "I think race, gender, income inequality, education, and technology play the most significant roles in our society. I like to build software that prioritizes people over products, respects user privacy, and empowers those most marginalized in society."
+        },
+        {
             name: "I have no idea how not to be a goon",
             imagePath: "https://media.giphy.com/media/90F8aUepslB84/giphy.gif",
-            description: "I am utterly and helplessly goofy. Dad jokes are my favorite jokes, I unconsciously talk in accents all the time, and I'm a gold medal winner in making weird faces."
+            description: "I am utterly and helplessly goofy. Dad jokes are my favorite jokes, I unconsciously talk in accents all the time, and I'm an Olympic gold medalist in face making."
         },
         {
             name: "I enjoy a crowd",
@@ -29,6 +34,11 @@ export const About = {
             name: "I'm into all things NFL",
             imagePath: "https://media.giphy.com/media/3ohhwotrgQbZJ1rwK4/giphy.gif",
             description: "I recently got into the NFL a year or so ago after seeing Aaron Rodgers throw an ungodly number of Hail Marys. I'm also low-key obsessed with fantasy football."
+        },
+        {
+            name: "Sarah Silverman is my spirit animal",
+            imagePath: "https://media.giphy.com/media/iBSfOWQerbOQ8/giphy.gif",
+            description: "All of my jokes are just like her's. I'm pretty sure she steals my standup material. But it's cool."
         },
         {
             name: "I like the outdoors",
